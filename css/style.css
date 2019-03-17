@@ -342,6 +342,7 @@ a:hover {
 }
 
 .navbar-nav {
+  display: inline-block;
   display: flex;
   box-orient: vertical;
   box-direction: normal;
@@ -493,6 +494,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -526,6 +529,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.ml-auto, .mx-auto {
+  margin-left: auto;
+}
+
 @media (min-width: 992px){
 .mb-lg-0, .my-lg-0 {
     margin-bottom: 0;
@@ -533,6 +540,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 @media (min-width: 992px){
 .mt-lg-0, .my-lg-0 {
-    margin-top: 0!;
+    margin-top: 0;
   }
 }
