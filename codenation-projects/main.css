@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.head-container {
+    text-align: center;
+    position: relative;
+}
+
+.down {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20%;
+    color: white;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.arrow {
+    height: 65px;
+    width: 65px;
+}
+
+@keyframes bounce {
+    0% {top: 210%;}
+    50% {top: 220%;}
+    100% {top: 210%;}
+}
+
+.title {
+    font-size: 6rem;
+    margin: 0;
+    color:  #274E9B;
+}
+
+.subtitle {
+    font-size: 3rem;
+    margin: 0;
+    color: #F5B32F;
+    font-weight: 100;
+}
+
+.cn-bracket {
+    color: #F5B32F;
+}
+
+
+#projects {
+    margin: 5rem 10rem 10rem 10rem;
+}
+
+.projects-title {
+    color: #F5B32F;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.project-card {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 6rem;
+}
+
+.project-card-title {
+    color: #524e4e;
+    margin: 1rem;
+}
+
+.project-card-title a:hover {
+    color: #6494e6;
+}
+
+.project-card-img {
+    width: 100%;
+    height: 280px;
+    margin-top: 2rem;
+    margin: 2%;
+    border-radius: 18%;
+    transition: all 0.3s;
+}
+
+.project-card-desc {
+    position: absolute;
+    top: 100%;
+}
+
+.live-link {
+    text-decoration: none;
+    color: #524e4e;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.github-link {
+    color: #524e4e;
+    font-weight: bold;
+}
+
+.github-link:visitied {
+    color: #524e4e;
+}
+
+.github-link:hover {
+    color: #6494e6;
+}
+
+
+.live-link:visited {
+    color: #524e4e;
+}
+
+.git-link {
+    margin-bottom: 4rem;
+    line-height: 1.5rem;
+}
+
+hr {
+    width: 10%;
+    border: solid 1px #0000004b;
+}

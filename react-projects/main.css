@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.head-container {
+    text-align: center;
+    position: relative;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+.down {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20%;
+    color: white;
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.arrow {
+    height: 65px;
+    width: 65px;
+}
+
+@keyframes bounce {
+    0% {top: 210%;}
+    50% {top: 220%;}
+    100% {top: 210%;}
+}
+
+
+.title {
+    font-size: 3rem;
+    margin: 0;
+    color: #e1dcdc;
+    font-weight: 100;
+}
+
+#projects {
+    margin: 5rem 10rem 10rem 10rem;
+}
+
+.projects-title {
+    color: #524e4e;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.project-card {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 6rem;
+}
+
+.project-card-title {
+    color: #524e4e;
+    margin: 1rem;
+}
+
+.project-card-title a:hover {
+    color: #6494e6;
+}
+
+.project-card-img {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.project-card-desc {
+    position: absolute;
+    top: 100%;
+}
+
+.live-link {
+    text-decoration: none;
+    color: #524e4e;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.github-link {
+    color: #524e4e;
+    font-weight: bold;
+}
+
+.github-link:visitied {
+    color: #524e4e;
+}
+
+.github-link:hover {
+    color: #6494e6;
+}
+
+
+.live-link:visited {
+    color: #524e4e;
+}
+
+.git-link {
+    margin-bottom: 4rem;
+    line-height: 1.5rem;
+}
+
+hr {
+    width: 10%;
+    border: solid 1px #0000004b;
+}
